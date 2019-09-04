@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Repository.View.Actualizar"
+            >
+  <ContentPage.Content>
+    <StackLayout>
+      <Label Text="Actualice los datos"/>
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Nombre:"
+               Grid.Row="0"
+               Grid.Column="0"/>
+        <Entry
+        Text="{Binding Nombre}"
+          Grid.Row="0"
+               Grid.Column="1"/>
+
+        <Label Text="Apellido:"
+               Grid.Row="1"
+               Grid.Column="0"/>
+        <Entry
+        Text="{Binding Apellido}"
+           Grid.Row="1"
+               Grid.Column="1"/>
+
+        <Label Text="Edad:"
+               Grid.Row="2"
+               Grid.Column="0"/>
+        <Entry
+        Text="{Binding Direccion}"
+           Grid.Row="2"
+               Grid.Column="1"/>
+        
+        <Label Text="Direccion:"
+               Grid.Row="3"
+               Grid.Column="0"/>
+
+        <Entry
+        Text="{Binding Edad}"
+          Grid.Row="3"
+               Grid.Column="1"/>
+      </Grid>
+
+
+      <StackLayout Orientation="Vertical">
+        <Button
+        Text="Actualizar"
+        Command="{Binding actualizar}"/>
+        <Button
+            Text="Cancelar"
+            Command="{Binding cancelar}"
+            />
+      </StackLayout>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

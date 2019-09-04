@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pags:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Repository.View.Acciones"
+             xmlns:pags="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+  <ContentPage.Content>
+    <StackLayout
+          Margin="30,40,30,40"
+          BackgroundColor="AliceBlue">
+
+      <Label Text="¿Qué acción desea realizar?" 
+             VerticalOptions="StartAndExpand"
+             HorizontalOptions="CenterAndExpand"/>
+      <StackLayout Orientation="Vertical">
+        <Button Text="Eliminar"
+                Command="{Binding eliminar}"/>
+        <Button Text="Actualizar"
+                Command="{Binding actualizar}"/>
+      </StackLayout>
+    </StackLayout>
+  </ContentPage.Content>
+</pags:PopupPage>
